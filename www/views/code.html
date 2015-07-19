@@ -1,0 +1,32 @@
+<section id="app">
+
+  <div class="container content">
+      <div class="row">
+          <div class="col-sm-9">
+              <h2 class="page-header">Spring and Google App Engine</h2>
+              <p>
+              For the 2013 Orlando Google I/O Extended event I did a presentation about converting a simple Spring project
+              to run on Google App Engine. The concept was to take a small example Spring project and demonstrate what would be
+              necessary to port it to GAE. In addition, the final version takes advantage of Spring dependency injection to
+              easily switch to using Datastore for persistence.
+              </p>
+              <p>
+              A primary concern when deploying a Spring project on GAE is performance. Much of the power of Spring comes
+              from having the Spring container create and inject all the dependencies when the application loads. However,
+              GAE needs the application to be responsive so it is necessary to ensure that Spring either completes the initial
+              wiring quickly or defers some of it. More information is available in the
+              <a href="assets/GoogleIO_16May13.pdf">slides</a> that were presented.
+              </p>
+              <p>
+              The projects are <a href="https://github.com/kenpritchard/spring-gae">available</a>
+              on GitHub separately as
+              <a href="https://github.com/kenpritchard/spring-gae/tree/master/DemoSpringOnly">the initial Spring project</a>
+              and
+              <a href="https://github.com/kenpritchard/spring-gae/tree/master/DemoSpringAppEngine">the converted GAE project</a>.
+              </p>
+          </div>
+          <div class="col-sm-3" ng-include="'views/about.html'" />
+      </div>
+  </div>
+
+</section>

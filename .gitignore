@@ -1,3 +1,5 @@
+.tmp
+/node_modules
 /plugins/
 /platforms
 /www/lib/*
